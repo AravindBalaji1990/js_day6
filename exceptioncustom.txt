@@ -1,0 +1,24 @@
+class InvalidArgumentException extends Error {
+  constructor(message) {
+    super(message);
+    this.name = this.constructor.name;
+  }
+}
+
+
+function InvalidArgumentException(message) {
+    this.message = message;
+    // Use V8's native method if available, otherwise fallback
+    if ("captureStackTrace" in Error)
+        Error.captureStackTrace(this, InvalidArgumentException);
+    else
+        this.stack = (new Error()).stack;
+}
+
+InvalidArgumentException.prototype = Object.create(Error.prototype);
+InvalidArgumentException.prototype.name = "InvalidArgumentException";
+InvalidArgumentException.prototype.constructor = InvalidArgumentException;
+
+
+throw new InvalidArgumentException();
+var err = new InvalidArgumentException("Not yet...");
