@@ -1,5 +1,5 @@
 let promise = new Promise(function(resolve, reject) {
-  setTimeout(() => reject(new Error("Error")), 1000);
+  setTimeout(() => reject(new Error("Error")), 5000);
 });
 
 // reject runs the second function in .then

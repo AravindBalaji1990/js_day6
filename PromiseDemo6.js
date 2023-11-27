@@ -1,3 +1,6 @@
+//Higher order functions
+//take one or more functions as a arguments or retunr a fcuntion
+//as thier result
 function fetchDataFromAPI() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {

@@ -4,7 +4,7 @@ function fetchDataFromAPI() {
     setTimeout(() => {
       const data = { message: "Data fetched successfully!" };
       resolve(data);
-    }, 2000); // Simulating a 2-second delay for fetching data
+    }, 5000); // Simulating a 2-second delay for fetching data
   });
 }
 
