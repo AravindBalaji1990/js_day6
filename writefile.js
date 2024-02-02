@@ -5,3 +5,4 @@ const customer = {
 };
 const jsonString = JSON.stringify(customer);
 console.log(jsonString);
+console.log(typeof jsonString);

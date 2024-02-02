@@ -1,5 +1,5 @@
 let promise = new Promise(function(resolve, reject) {
-  setTimeout(() => resolve("executed"), 5000);
+  setTimeout(() => resolve("i am executing after 5 seconds"), 5000);// milliseconds 
 });
 
 // resolve runs the first function in .then

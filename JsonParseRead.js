@@ -7,6 +7,9 @@ fs.readFile("/Users/aravindbalaji/Documents/Javascript/JS_Day6/js_day6/sample.js
   }
   try {
     const customer = JSON.parse(xyz);
+    if(customer.address =="address from json"){
+      delete customer.address
+    }
     //calling the individual parameter from json
     console.log("data available:", customer.address);
     // calling the complete json

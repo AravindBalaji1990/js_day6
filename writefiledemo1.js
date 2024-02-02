@@ -8,7 +8,7 @@ const customer = {
 }
 //stringify - which converts the object/json to be written to a file 
 //how it converts - any json/objects to be converted using javascript object notation(JSON)string
-const jsonString = JSON.stringify(customer,null, 2)
+const jsonString = JSON.stringify(customer,null, 1)
 fs.writeFile('./newCustomer1.json', jsonString, err => {
     if (err) {
         console.log('Error writing file', err)
