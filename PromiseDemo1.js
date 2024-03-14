@@ -4,7 +4,7 @@
 // });
 // console.log(promise1)
 
-// // promise - reject meansita failure
+// // // promise - reject meansita failure
 // let promise2 = new Promise(function(resolve, reject) {
 //     reject(new Error('Something is went wrong!'));
 // });
