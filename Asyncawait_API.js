@@ -1,3 +1,4 @@
+//anonymous function
 const fetchfromapi = async()=>{
     try{
         const response = await fetch("https://reqres.in/api/users")
