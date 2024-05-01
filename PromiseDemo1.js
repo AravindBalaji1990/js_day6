@@ -1,7 +1,7 @@
 // promise -resolve its success
-// let promise1 = new Promise(function(resolve, reject) {
-//     resolve("I am done");
-// });
+let promise1 = new Promise(function(resolve, reject) {
+    resolve("I am done");
+});
 // console.log(promise1)
 
 // // // // promise - reject meansita failure

@@ -7,9 +7,9 @@ const firstProm = new Promise((resolve) =>{
     },1000)
 })
 
-const secondProm =  (data) => { return new Promise((resolve) =>{
+const secondProm =  (xyz) => { return new Promise((resolve) =>{
     setTimeout(() =>{
-        resolve("2nd operation")
+        resolve(xyz + " - 2nd operation")
     },3000)
 })
 }
